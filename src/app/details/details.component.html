@@ -1,6 +1,10 @@
-<div>
-    <img src="{{ article?.image }}" alt="un produit" style="height: 200px;">
+<div class="row">
     <h1>{{ article?.title }}</h1>
-    <p>{{ article?.description }}</p>
+    <div class="col-md-6">
+        <img src="{{ article?.image }}" alt="un produit" class="img-fluid"/>
+    </div>
+    <div class="col-md-6">
+        <p class="price my-5 text-center">{{ article?.price }}</p>
+        <p class="description my-4">{{ article?.description }}</p>
+    </div>
 </div>
-55

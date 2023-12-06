@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Article } from './article';
+import { response } from 'express';
 ​
 ​
 @Injectable({
@@ -133,4 +134,12 @@ export class ArticleService {
 ​
       this.articles.unshift(article)
   }
+
+  async  findAll():Promise<Article[]>
+  {
+    let rep = []
+    rep = await fetch('https://fakestoreapi.com/products').then(response => response.json())
+    return rep
+  }
+
 }
