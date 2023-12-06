@@ -1,0 +1,15 @@
+div.col{
+    width  : 20%;
+    float: left;
+    padding: 20px;
+    text-align: center;
+}
+
+img.img-fluid{
+    width: 100%;
+}
+
+p.price{
+    font-size: 25px;
+    color: brown;
+}

@@ -1,0 +1,17 @@
+<div>
+    <h1>Enregistrer</h1>
+​
+    <div>
+        <p *ngIf="isOpen" class="alert">Enregistrement réussi! <span (click)="close()">x</span></p>
+        <form [formGroup]="applyForm" (submit)="save()">
+            <p>Titre : <input type="text" formControlName="title"></p>
+            <p>Prix : <input type="text" formControlName="price"></p>
+            <p>Description : <input type="text" formControlName="description"></p>
+            <p>Catégorie : <input type="text" formControlName="category"></p>
+            <p>Image : <input type="text" formControlName="image"></p>
+            <p>Taux : <input type="text" formControlName="rate"></p>
+            <p>Stock : <input type="text" formControlName="count"></p>
+            <p><button type="submit">Valider</button></p>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,7 @@
+<div class="col">
+    <img class="img-fluid" src="{{ article.image }}" alt="L'article" style="height: 200px;">
+    <h3>{{ article.title }}</h3>
+    <p>{{ article.category }}</p>
+    <p class="price">prix : {{ article.price }}</p>
+    <p><a [routerLink]="['/detail', article.id]">Ajouter au panier</a></p>
+</div>

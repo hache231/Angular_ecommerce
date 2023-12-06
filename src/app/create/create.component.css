@@ -1,0 +1,12 @@
+.alert{
+    color:green;
+    border:2px solid green;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 25px;
+}
+
+.alert span {
+    float: right;
+    cursor: pointer;
+}
